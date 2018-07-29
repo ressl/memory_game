@@ -81,6 +81,16 @@ h1 {
   cursor: default;
   background: #02ccba;
   font-size: 33px;
+  animation: match-frames linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes match-frames{
+  0% { opacity:1; transform: scaleX(1.00) scaleY(1.00); }
+  25% { opacity:1; transform: scaleX(0.95) scaleY(0.95); }
+  50% { opacity:1; transform:  scaleX(1.10) scaleY(1.10); }
+  100% { transform: scaleX(1.00) scaleY(1.00); }
 }
 
 .deck .card.incorrect {
